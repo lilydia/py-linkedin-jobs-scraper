@@ -1,4 +1,5 @@
 # TorontoAftertheFirstWave Applications
+> Please note that this project is part of an ongoing project assessing impacts of COVID-19 in Toronto (https://torontoafterthefirstwave.com/). Most up-to-date data will be collected every Sunday and reflected on the main dashboard.
 * Used linkedin-jobs-scraper (see below) to query data. 
 * Queries and dataset used are stored in folder "examples".
 * Data cleaning details are in "Data_Cleaning_TorontoAfterTheFirstWave.ipynb"
