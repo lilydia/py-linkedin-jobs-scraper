@@ -1,6 +1,8 @@
 # TorontoAftertheFirstWave Applications
-> Used linkedin-jobs-scraper (see below) to query data. Queries and dataset used are stored in folder "examples".
-> Data cleaning details are in "Data_Cleaning_TorontoAfterTheFirstWave.ipynb"
+* Used linkedin-jobs-scraper (see below) to query data. 
+* Queries and dataset used are stored in folder "examples".
+* Data cleaning details are in "Data_Cleaning_TorontoAfterTheFirstWave.ipynb"
+* Visualizations of dataset: https://public.tableau.com/profile/youjing.li6473#!/vizhome/JobPostingsonLinkedInOct-Nov/Dashboard1?publish=yes
 
 
 ## Description of linkedin-jobs-scraper
