@@ -3,7 +3,7 @@
 > Data cleaning details are in "Data_Cleaning_TorontoAfterTheFirstWave.ipynb"
 
 
-# linkedin-jobs-scraper
+## Description of linkedin-jobs-scraper
 > Scrape public available jobs on Linkedin using headless browser. 
 > For each job, the following fields are extracted: `job_id`, `link`, `apply_link`, `title`, `company`, `place`, `description`, 
 > `description_html`, `date`, `seniority_level`, `job_function`, `employment_type`, `industries`.
