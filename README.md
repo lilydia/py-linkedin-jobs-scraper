@@ -1,4 +1,12 @@
-# linkedin-jobs-scraper
+# TorontoAftertheFirstWave Applications
+> Please note that this project is part of an ongoing project assessing impacts of COVID-19 in Toronto (https://torontoafterthefirstwave.com/). Most up-to-date data will be collected every Sunday and reflected on the main dashboard.
+* Used linkedin-jobs-scraper (see below) to query data. 
+* Queries and dataset used are stored in folder "examples".
+* Data cleaning details are in "Data_Cleaning_TorontoAfterTheFirstWave.ipynb"
+* Visualizations of dataset: https://public.tableau.com/profile/youjing.li6473#!/vizhome/JobPostingsonLinkedInOct-Nov/Dashboard1?publish=yes
+
+
+## Description of linkedin-jobs-scraper
 > Scrape public available jobs on Linkedin using headless browser. 
 > For each job, the following fields are extracted: `job_id`, `link`, `apply_link`, `title`, `company`, `place`, `description`, 
 > `description_html`, `date`, `seniority_level`, `job_function`, `employment_type`, `industries`.
