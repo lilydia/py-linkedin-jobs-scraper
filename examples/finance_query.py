@@ -37,7 +37,7 @@ for counter in range(2):
             scraper = LinkedinScraper(
                 chrome_options=None,  # You can pass your custom Chrome options here
                 max_workers=1,  # How many threads will be spawn to run queries concurrently (one Chrome driver for each thread)
-                slow_mo=0.5,  # Slow down the scraper to avoid 'Too many requests (429)' errors
+                slow_mo=1.2,  # Slow down the scraper to avoid 'Too many requests (429)' errors
             )
 
             # Add event listeners
@@ -57,7 +57,7 @@ for counter in range(2):
                     options=QueryOptions(
                         locations=['Toronto, Ontario, Canada'],
                         optimize=True,
-                        limit=250,
+                        limit=400,
                         filters=QueryFilters(
                             relevance=RelevanceFilters.RELEVANT,
                             time=TimeFilters.WEEK,
@@ -91,7 +91,7 @@ for counter in range(2):
             scraper = LinkedinScraper(
                 chrome_options=None,  # You can pass your custom Chrome options here
                 max_workers=1,  # How many threads will be spawn to run queries concurrently (one Chrome driver for each thread)
-                slow_mo=0.6,  # Slow down the scraper to avoid 'Too many requests (429)' errors
+                slow_mo=1.2,  # Slow down the scraper to avoid 'Too many requests (429)' errors
             )
 
             # Add event listeners
@@ -111,7 +111,7 @@ for counter in range(2):
                     options=QueryOptions(
                         locations=['Toronto, Ontario, Canada'],
                         optimize=True,
-                        limit=50,
+                        limit=150,
                         filters=QueryFilters(
                             relevance=RelevanceFilters.RELEVANT,
                             time=TimeFilters.WEEK,

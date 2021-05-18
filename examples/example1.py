@@ -5,7 +5,7 @@ from linkedin_jobs_scraper.filters import RelevanceFilters, TimeFilters, TypeFil
 
 
 def on_data(data: EventData):
-    print('[ON_DATA]', data.title, data.company, data.date, data.link, len(data.description))
+    print('[ON_DATA]', data.job_function)
 
 
 def on_error(error):
@@ -31,17 +31,16 @@ queries = [
     Query(
         options=QueryOptions(
             optimize=True,  # Blocks requests for resources like images and stylesheet
-            limit=27  # Limit the number of jobs to scrape
+            limit=0  # Limit the number of jobs to scrape
         )
     ),
     Query(
         query='Engineer',
         options=QueryOptions(
-            locations=['United States'],
+            locations=['Toronto, Ontario, Canada'],
             optimize=False,
             limit=5,
             filters=QueryFilters(
-                company_jobs_url='https://www.linkedin.com/jobs/search/?f_C=1441%2C17876832%2C791962%2C2374003%2C18950635%2C16140%2C10440912&geoId=92000000',  # Filter by companies
                 relevance=RelevanceFilters.RECENT,
                 time=TimeFilters.MONTH,
                 type=[TypeFilters.FULL_TIME, TypeFilters.INTERNSHIP],
